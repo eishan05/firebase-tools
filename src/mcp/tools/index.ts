@@ -9,6 +9,7 @@ import { messagingTools } from "./messaging/index.js";
 import { remoteConfigTools } from "./remoteconfig/index.js";
 import { crashlyticsTools } from "./crashlytics/index.js";
 import { campaignTools } from "./campaigns/index.js";
+import { testTools } from "./localhost/index.js";
 
 /** availableTools returns the list of MCP tools available given the server flags */
 export function availableTools(activeFeatures?: ServerFeature[]): ServerTool[] {
@@ -32,6 +33,7 @@ const tools: Record<ServerFeature, ServerTool[]> = {
   remoteconfig: addFeaturePrefix("remoteconfig", remoteConfigTools),
   crashlytics: addFeaturePrefix("crashlytics", crashlyticsTools),
   campaigns: addFeaturePrefix("campaigns", campaignTools),
+  test: addFeaturePrefix("test", testTools),
 };
 
 function addFeaturePrefix(feature: string, tools: ServerTool[]): ServerTool[] {

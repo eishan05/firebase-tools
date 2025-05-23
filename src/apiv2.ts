@@ -300,11 +300,9 @@ export class Client {
       }
     }
     if (
-      !reqOptions.ignoreQuotaProject &&
-      GOOGLE_CLOUD_QUOTA_PROJECT &&
-      GOOGLE_CLOUD_QUOTA_PROJECT !== ""
+      !reqOptions.ignoreQuotaProject
     ) {
-      reqOptions.headers.set(GOOG_USER_PROJECT_HEADER, GOOGLE_CLOUD_QUOTA_PROJECT);
+      reqOptions.headers.set(GOOG_USER_PROJECT_HEADER, "fm-webpush");
     }
     return reqOptions;
   }

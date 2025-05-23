@@ -132,6 +132,7 @@ export const campaignsApiOrigin = () =>
     "FIREBASE_MESSAGING_CAMPAIGNS_CONFIG_URL",
     "https://firebasemessagingcampaigns.googleapis.com",
   );
+export const testOrigin = () => utils.envOverride("TEST_URL", "http://localhost:8080")
 export const crashlyticsApiOrigin = () =>
   utils.envOverride("FIREBASE_CRASHLYTICS_URL", "https://firebasecrashlytics.googleapis.com");
 export const resourceManagerOrigin = () =>

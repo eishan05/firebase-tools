@@ -15,7 +15,7 @@ export async function getCampaigns(projectId: string): Promise<any> {
     const res = await apiClient.request({
       method: "GET",
       path: `/projects/${projectId}/campaigns`,
-      body: {},
+      ignoreQuotaProject: false,
       timeout: TIMEOUT,
     });
     return res.body;
