@@ -145,6 +145,11 @@ export const cloudRunApiOrigin = () =>
   utils.envOverride("CLOUD_RUN_API_URL", "https://run.googleapis.com");
 export const serviceUsageOrigin = () =>
   utils.envOverride("FIREBASE_SERVICE_USAGE_URL", "https://serviceusage.googleapis.com");
+export const messagingCampaignsApiOrigin = () =>
+  utils.envOverride(
+    "FIREBASE_MESSAGING_CAMPAIGNS_CONFIG_URL",
+    "https://firebasemessagingcampaigns.googleapis.com",
+  );
 
 export const githubOrigin = () => utils.envOverride("GITHUB_URL", "https://github.com");
 export const githubApiOrigin = () => utils.envOverride("GITHUB_API_URL", "https://api.github.com");
