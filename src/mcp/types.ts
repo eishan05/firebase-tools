@@ -7,6 +7,8 @@ export const SERVER_FEATURES = [
   "remoteconfig",
   "crashlytics",
   "apphosting",
+  "campaigns",
+  "firebase_local_tool",
 ] as const;
 export type ServerFeature = (typeof SERVER_FEATURES)[number];
 

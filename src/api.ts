@@ -24,6 +24,17 @@ export const cloudMonitoringOrigin = () =>
   utils.envOverride("CLOUD_MONITORING_URL", "https://monitoring.googleapis.com");
 export const containerRegistryDomain = () =>
   utils.envOverride("CONTAINER_REGISTRY_DOMAIN", "gcr.io");
+export const campaignsApiOrigin = () =>
+  utils.envOverride(
+    "FIREBASE_MESSAGING_CAMPAIGNS_CONFIG_URL",
+    "https://firebasemessagingcampaigns.googleapis.com",
+  );
+
+  export const localHostOrigin = () =>
+  utils.envOverride(
+    "LOCALHOST_ORIGIN",
+    "http://localhost:8080",
+  );
 
 export const developerConnectOrigin = () =>
   utils.envOverride("DEVELOPERCONNECT_URL", "https://developerconnect.googleapis.com");

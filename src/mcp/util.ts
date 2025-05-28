@@ -12,6 +12,8 @@ import {
   remoteConfigApiOrigin,
   storageOrigin,
   crashlyticsApiOrigin,
+  campaignsApiOrigin,
+  localHostOrigin,
 } from "../api";
 import { check } from "../ensureApiEnabled";
 
@@ -89,6 +91,8 @@ const SERVER_FEATURE_APIS: Record<ServerFeature, string> = {
   remoteconfig: remoteConfigApiOrigin(),
   crashlytics: crashlyticsApiOrigin(),
   apphosting: apphostingOrigin(),
+  campaigns: campaignsApiOrigin(),
+  firebase_local_tool: localHostOrigin(),
 };
 
 /**
