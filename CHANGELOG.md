@@ -1,5 +1,4 @@
-- Fixed issue in `init` where users were forced to specify emulator UI port (#8626)
-- Adds MCP tools for App Hosting (#8605)
-- Fixed crash when starting the App Hosting emulator in certain applications (#8624)
-- Fixed issue where, with `webframeworks` enabled, `firebase init hosting` re-prompts users for source. (#8587)
-- Update typescript version in functions template to avoid build issue with @google-cloud/storage depedency (#8194)
+- Fixed issue where `projects:create` didn't correctly parse the `projectId` and `displayName` input. (#8634)
+- Improved GetDatabase API call caching for Firestore function deployments. (#8681)
+- Increased timeout for linking CloudSQL instances to Data Connect.
+- Fixed issue where `firebase use --add` didn't correctly set the active project. (#8694)
