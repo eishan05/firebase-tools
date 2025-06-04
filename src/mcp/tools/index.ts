@@ -9,7 +9,8 @@ import { messagingTools } from "./messaging/index.js";
 import { remoteConfigTools } from "./remoteconfig/index.js";
 import { crashlyticsTools } from "./crashlytics/index.js";
 import { appHostingTools } from "./apphosting/index.js";
-import { campaignTools, localTools } from "./campaigns/index.js";
+import { campaignTools } from "./campaigns/index.js";
+import { localTools } from "./local/index.js";
 
 /** availableTools returns the list of MCP tools available given the server flags */
 export function availableTools(activeFeatures?: ServerFeature[]): ServerTool[] {
